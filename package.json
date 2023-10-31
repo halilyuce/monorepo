@@ -1,0 +1,26 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Nuxt 3 Monorepo",
+  "scripts": {
+    "portal-build": "npm run build --workspace=portal",
+    "portal-dev": "npm run dev --workspace=portal",
+    "portal-generate": "npm run generate --workspace=portal",
+    "portal-lint": "npm run lint --workspace=portal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halilyuce/monorepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halilyuce/monorepo/issues"
+  },
+  "homepage": "https://github.com/halilyuce/monorepo#readme",
+  "workspaces": [
+    "portal",
+    "apps/first-ui",
+    "apps/second-ui"
+  ]
+}

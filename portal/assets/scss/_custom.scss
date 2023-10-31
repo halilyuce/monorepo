@@ -1,0 +1,84 @@
+// DEFAULT LAYOUT
+#layout-default, #layout-no-sidebar {
+    .trigger {
+      font-size: 18px;
+      line-height: 64px;
+      padding: 0 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+  
+    .logo {
+      height: 38px;
+      margin: 15px 16px 36px;
+  
+      img {
+        object-fit: contain;
+      }
+    }
+  
+    .ant-layout-footer {
+      padding: 10px 50px;
+    }
+  
+  }
+  
+  // DATA TABLES
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  
+  .table-row-dark {
+    background-color: #fbfbfb;
+  }
+  
+  .ant-table {
+    td {
+      white-space: nowrap;
+      font-size: 0.75rem;
+      padding: 10px 10px !important;
+    }
+  
+    tr th {
+      padding: 10px 10px !important;
+    }
+  }
+  
+  .ant-table-pagination.ant-pagination {
+    margin: 16px
+  }
+  
+  .absolute-important {
+    position: absolute !important;
+  }
+  
+  input[type='number'] {
+    -moz-appearance: textfield;
+    /*For FireFox*/
+  
+    &::-webkit-inner-spin-button {
+      /*For Webkits like Chrome and Safari*/
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  
+  .ant-menu-dark {
+    .ant-menu-inline.ant-menu-sub{
+      background: #161719;
+    }
+    &:not(.ant-menu-horizontal) .ant-menu-item-selected{
+      background-color: #292a2d !important;
+    }
+   
+    .ant-menu-item:not(.ant-menu-item-selected) .ant-menu-item-icon {
+      filter: invert(40%) sepia(15%) saturate(18%) hue-rotate(314deg) brightness(88%) contrast(84%);
+    }
+  }
+  .ant-layout-sider-trigger{
+    background: #1f1f21 !important;
+  }
+  
+  // To prevent tailwind from displacing icons
+  svg { vertical-align: baseline; }
+  
